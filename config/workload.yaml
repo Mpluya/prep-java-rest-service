@@ -16,6 +16,8 @@ spec:
       - name: BP_JVM_VERSION
         value: "11"
   params:
+    - name: image_scanner_template_name
+      value: image-scanner-template
     - name: annotations
       value:
         autoscaling.knative.dev/minScale: "1"

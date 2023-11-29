@@ -1,0 +1,13 @@
+apiVersion: services.apps.tanzu.vmware.com/v1alpha1
+kind: ClassClaim
+metadata:
+  annotations:
+    classclaims.services.apps.tanzu.vmware.com/xrd-name: xpostgresqlinstances.database.rds.example.org
+  generation: 1
+  name: postgres-mae
+  namespace: mae
+spec:
+  classRef:
+    name: aws-rds-psql
+  parameters:
+    storageGB: 10
